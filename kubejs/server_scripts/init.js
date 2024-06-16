@@ -15,6 +15,15 @@ PlayerEvents.loggedIn(event=>{
         setData(level,BOSSROOMPOS[0],bossRoomX*bossRoomX+2023)
         setData(level,BOSSROOMPOS[1],bossRoomY*bossRoomY-2024)
         setData(level,BOSSROOMPOS[2],bossRoomZ*bossRoomZ+2025)
+        
+        setPoints(level,0)
+
+        setData(level,DAY,0)
+        setData(level,HOUR,6)
+        setData(level,TICK,0)
+        player.persistentData.putInt(DAY,0)
+        player.persistentData.putInt(HOUR,0)
+        player.persistentData.putInt(TICK,0)
     }
 })
 

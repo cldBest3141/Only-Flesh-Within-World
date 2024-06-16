@@ -1,7 +1,7 @@
 /**用于读取游戏数据
  * @param {Internal.Level} level
  * @param {String} name
- * @returns {Int}
+ * @returns {Number}
  */
 
 function getData(level,name){
@@ -12,7 +12,7 @@ function getData(level,name){
 /**用于保存游戏数据
  * @param {Internal.Level} level
  * @param {String} name
- * @param {Int} value
+ * @param {Number} value 
  */
 
 function setData(level,name,value){
