@@ -17,7 +17,7 @@ function getSize(level, structName) {
 
 /**用于处理结构放置
  * @param {Internal.Level} level
- * @param {Internal.BlockPos} pos
+ * @param {BlockPos} pos
  * @param {String} structName 
  */
 function placeStructInWorld(level, pos, structName) {
