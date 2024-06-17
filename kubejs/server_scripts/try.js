@@ -4,7 +4,7 @@ ItemEvents.rightClicked("dirt",event=>{
     player.tell('b')
 
     //entitySummon(level,"minecraft:zombie",new BlockPos(0,100,0),[0,0],"{'NoAI':1b,'CustomName':'\"a\"'}")
-    addPoints(level,299)
+    addPoints(level,100)
     /*let level = event.level
 
     let x = Math.sqrt(getData(level,BOSSROOMPOS[0])-2023)

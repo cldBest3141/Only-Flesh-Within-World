@@ -15,6 +15,7 @@ function getPoints(level){
 function setPoints(level, value){
     let oldValue = getPoints(level)
     let server = level.server
+    value = Math.max(0,value)
     value = Math.min(value,120000)
 
     if (getPhase(oldValue) != getPhase(value)){
@@ -35,7 +36,8 @@ function setPoints(level, value){
  */
 
 function addPoints(level, value){
-    value = getPoints(level) + value
+    let modifier = getData(level,INFECTIONMODIFIER)/2 + 1
+    value = getPoints(level) + Math.floor(value*modifier)
     setPoints(level,value)
 }
 
